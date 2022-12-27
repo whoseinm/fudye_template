@@ -2,13 +2,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
 
+body{
+    margin: 0;
+    padding: 0 auto;
+    overflow-x: hidden;
+}
 
 
+.cards{
+    background: #FFF8EF;
+    min-height: 500px;
+    padding-top: 20px;
+}
+
+.cards .title_cards{
+    width: 100%;
+    height: 50px;
+}
+
+.card{
+    height: 400px;
+}
+
+.card .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.card .card_text{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    color: black;
+}
+
+.banner{
+    min-height: 300px;
+    background: #1AC1E5;
+    font-size: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.button1{
+    width: 270px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0px;
+    background: #fff;
+    font-size: 17px;
+    color: #000;
+    margin-top: 25px;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.5s;
+}
+
+.categories{
+    padding-top: 10px;
+    height: 50px;
+}
+
+.categories ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: -50px;
+    font-size: 25px;
+}
 
 
+.categories ul li a{
+    text-decoration: none;
+    color: black;
+}
 
+.recipe{
+    height: 600px;
+    background: red;
+}
 
+.recipe .recipe_title{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
 
+.recipe .recipe_img{
+    width: 100%;
+    height: 300px;
+    background-image: url(../imgs/food3.png);
+    object-fit: cover;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -38,6 +129,64 @@
         font-weight: bold;
         font-size: 16px;
     }
+
+    .box_text{
+        width: 400px;
+        height: 320px;
+        border-radius: 8px;
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        background: white;
+    }
+
+    .box_text .title{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        color: black;
+        padding-left: 20px;
+    }
+
+    .box_text .body_text{
+        width: 100%;
+        height: 100px;
+        padding-left: 20px;
+        line-height: 30px
+    }
+
+    .box_text .body_text p{
+        font-size: 18px;
+        color: #B0B0B0;
+    }
+
+    .box_text .box_button .button{
+        width: 270px;
+        height: 48px;
+        border-radius: 8px;
+        border: 0px;
+        background: #1BB1CF;
+        font-size: 17px;
+        color: #FBFBFB;
+        margin-top: 35px;
+        margin-left: 20px;
+        font-family: 'Rubik', sans-serif;
+        transition: 0.5s;
+    }
+
+    .box_text .box_button .button:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .card .card_text .border{
+        width: 30%;
+        height: 2px;
+        background: #EA1919;
+        position: relative;
+        left: 155px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -66,6 +215,64 @@
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         font-size: 16px;
+    }
+
+    .box_text{
+        width: 500px;
+        height: 320px;
+        border-radius: 8px;
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        background: white;
+    }
+
+    .box_text .title{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        color: black;
+        padding-left: 40px;
+    }
+
+    .box_text .body_text{
+        width: 100%;
+        height: 100px;
+        padding-left: 40px;
+        line-height: 30px
+    }
+
+    .box_text .body_text p{
+        font-size: 20px;
+        color: #B0B0B0;
+    }
+
+    .box_text .box_button .button{
+        width: 270px;
+        height: 48px;
+        border-radius: 8px;
+        border: 0px;
+        background: #1BB1CF;
+        font-size: 17px;
+        color: #FBFBFB;
+        margin-top: 35px;
+        margin-left: 40px;
+        font-family: 'Rubik', sans-serif;
+        transition: 0.5s;
+    }
+
+    .box_text .box_button .button:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .card .card_text .border{
+        width: 20%;
+        height: 2px;
+        background: #EA1919;
+        position: relative;
+        left: 255px;
     }
 }
 
@@ -124,7 +331,7 @@
     }
 
     .box_text .body_text p{
-        font-size: 25px;
+        font-size: 22px;
         color: #B0B0B0;
     }
 
@@ -136,7 +343,7 @@
         background: #1BB1CF;
         font-size: 17px;
         color: #FBFBFB;
-        margin-top: 25px;
+        margin-top: 15px;
         margin-left: 40px;
         font-family: 'Rubik', sans-serif;
         transition: 0.5s;
@@ -144,6 +351,14 @@
 
     .box_text .box_button .button:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .card .card_text .border{
+        width: 55%;
+        height: 2px;
+        background: #EA1919;
+        position: relative;
+        left: 50px;
     }
 }
 
@@ -223,6 +438,14 @@
     .box_text .box_button .button:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
+
+    .card .card_text .border{
+        width: 40%;
+        height: 2px;
+        background: #EA1919;
+        position: relative;
+        left: 85px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -284,7 +507,7 @@
         color: #B0B0B0;
     }
 
-    .box_text .box_button .button{
+    .button{
         width: 270px;
         height: 48px;
         border-radius: 8px;
@@ -300,5 +523,13 @@
 
     .box_text .box_button .button:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .card .card_text .border{
+        width: 40%;
+        height: 2px;
+        background: #EA1919;
+        position: relative;
+        left: 105px;
     }
 }
