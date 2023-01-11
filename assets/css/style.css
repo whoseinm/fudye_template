@@ -89,7 +89,7 @@ body{
 }
 
 .card_recipe{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .recipe{
@@ -514,6 +514,20 @@ body{
         font-size: 16px;
     }
 
+    .categories ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin-left: -50px;
+        font-size: 23px;
+    }
+    
+    
+    .categories ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
     .box_text{
         width: 600px;
         height: 320px;
@@ -598,6 +612,20 @@ body{
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
         font-size: 16px;
+    }
+
+    .categories ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin-left: -50px;
+        font-size: 23px;
+    }
+    
+    
+    .categories ul li a{
+        text-decoration: none;
+        color: black;
     }
 
     .box_text{
