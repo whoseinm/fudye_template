@@ -598,7 +598,7 @@ body{
     .navbar ul{
         display: flex;
         list-style: none;
-        margin-top: 15px;
+        align-items: center;
         padding: 0px 100px;
     }
     
